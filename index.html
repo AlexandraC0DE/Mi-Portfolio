@@ -1,106 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Diseño web, Programación, Copywriting, Email marketing, SEO">
     <title>Alexandra García Web</title>
-     <!-- Favicon -->
-     <link href="https://1.bp.blogspot.com/-eYnKS8pyjIA/YaHDar6rHEI/AAAAAAAAC7w/SZ0B7BtbRZo0TT0O3oCxpSmfKqEalg7IACLcBGAsYHQ/s16000/favicon.png" type="image/x-icon" rel="icon"/><link href="https://1.bp.blogspot.com/-eYnKS8pyjIA/YaHDar6rHEI/AAAAAAAAC7w/SZ0B7BtbRZo0TT0O3oCxpSmfKqEalg7IACLcBGAsYHQ/s16000/favicon.png" type="image/x-icon" rel="shortcut icon"/> 
-     <!-- HOJA DE ESTILO CSS -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-     <!-- Google Fonts -->
+    <!-- Favicon -->
+    <link
+        href="https://1.bp.blogspot.com/-eYnKS8pyjIA/YaHDar6rHEI/AAAAAAAAC7w/SZ0B7BtbRZo0TT0O3oCxpSmfKqEalg7IACLcBGAsYHQ/s16000/favicon.png"
+        type="image/x-icon" rel="icon" />
+    <link
+        href="https://1.bp.blogspot.com/-eYnKS8pyjIA/YaHDar6rHEI/AAAAAAAAC7w/SZ0B7BtbRZo0TT0O3oCxpSmfKqEalg7IACLcBGAsYHQ/s16000/favicon.png"
+        type="image/x-icon" rel="shortcut icon" />
+    <!-- HOJA DE ESTILO CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-                <!-- Logo  -->
-            <div class="brand">  
-            <a class="logo" title="Inicio" href="http://www.soyalexandragarcia.com"><img alt="Logo Alexandra García"  src="https://blogger.googleusercontent.com/img/a/AVvXsEjhnxJIBLysl0OOWNhhdUMugiHDiDXp4LNb8SEqVdWEqnXTwb-XZOc8uck1nvzIYitu9e3OcA_bKWB4TmJDGoPpoKaIxwCAX0y57k8GygoS2nmL6ebEf2ZMKF6bx3reN7aEQvcGMa04ZE8iahwvtawDtgQv5WoEbYszQ0DeXxlX2ElEN7d_g7G9kbmt=s16000"></a>
-            </div>  
-            
-            <input type="checkbox" id="check">
-            <label for="check" class="mostrar-menu">
-                &#8801
-            </label>
-  
-    <nav class="menu">
+        <!-- Logo  -->
+        <div class="brand">
+            <a class="logo" title="Inicio" href="#">
+                <img class="logo-image" alt="Logo Alexandra García"
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEjhnxJIBLysl0OOWNhhdUMugiHDiDXp4LNb8SEqVdWEqnXTwb-XZOc8uck1nvzIYitu9e3OcA_bKWB4TmJDGoPpoKaIxwCAX0y57k8GygoS2nmL6ebEf2ZMKF6bx3reN7aEQvcGMa04ZE8iahwvtawDtgQv5WoEbYszQ0DeXxlX2ElEN7d_g7G9kbmt=s16000">
+            </a>
+        </div>
 
-        <a href="">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Blog</a>
-        <a href="#">Escríbeme</a>
-        <label for="check" class="esconder-menu">
-            &#215
-        </label>
+        <nav id="menu" class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-link" href="#inicio">Inicio</a></li>
+                <li class="menu-item"><a class="menu-link" href="#about-me">Sobre mí</a></li>
+                <li class="menu-item"><a class="menu-link" href="#portafolio">Portfolio</a></li>
+            </ul>
+            <div id="equis" class="equis">&#215;</div>
+        </nav>
+        <div id="menu-hamburguesa" class="menu-hamburguesa">&#8801;</div>
+    </header>
+    <!-- HOME -->
+    <main class="contenido-banner">
+        <section id="inicio" class="banner">
+            <h1 class="title-profession">Diseño web, SEO y Copywriting<span class="title-modification">.</span></h1>
+            <div class="img-paragraph-banner-container">
+                <img class="personal-photo" src="./assets/alexandra-garcia2-borde-blanco.png" alt="Foto personal">
+                <div class="paragraph-cs-container">
+                    <p class="paragraph-banner">Con el diseño apropiado de tu sitio web, la misión y
+                        valor de tu negocio llegará más fácil y rápido. Aunque el momento 
+                        que causará una verdadera conexión con tus seguidores 
+                        será el texto de tu web. Ten presente que debe existir un equilibrio
+                        entre imagen y texto para causar el impacto deseado.
+                    </p>
+                    <div class="boton">
+                        <a href="./assets/cv.pdf" class="boton-cv" download="cv-alexandra-garcia.pdf">Descargar CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </nav>
+        <section id="about-me" class="about-me">
+            <h2 class="title-section">Sobre mí</h2>
+            <div class="about-me-description-container">
+                <div>
+                    <p class="description-about-me">
+                        Hace varios años atrás el mundo de la tecnología para mí eran solo
+                        videojuegos entretenidos como The Sims o The Roller Coaster Tycon.
+                        Al dejar atrás la infancia, fui descubriendo que se podían hacer cosas
+                        mucho más interesantes con un simple ordenador.
+                    </p>
+                    <p class="description-about-me">
+                        Aunque en aquella época el acceso a la información era todavía muy limitado,
+                        supe que ese era el camino hacia algo mucho más grande e interesante. Así que 
+                        al terminar el bachillerato me inscribí en
+                        la carrera de Técnico superior en Diseño gráfico editorial.
+                    </p>
+                    <p class="description-about-me">
+                        En un principio creí que el diseño gráfico tenía que ver con toda la parte visual de las
+                        páginas web, supe después que es una profesión mucho más amplia que requiere conocimiento
+                        sobre lógica, psicología del color, geometría, equilibrio visual, historia, etc. 
+                        Además de tener siempre en claro la opinión del consumidor.
+                    </p>
+                </div>
+                <div>
+                    <p class="description-about-me">
+                        Yo seguí adelante con mis estudios. Aunque siempre sentí
+                        curiosidad por la informática, así que al terminar mi carrera decidí tomar un curso
+                        de diseño de páginas web y creo que allí fue cuando comenzó todo. 
+                    </p>
+                    <p class="description-about-me">
+                        En ese momento la programación se trataba de descubrir que se podía hacer e intentar
+                        aplicarla con todo lo aprendido en diseño. Luego avancé y conseguí un empleo como 
+                        content writter, descubriendo por primera vez el mundo del SEO y el Copywriting que si me lo preguntas, pienso que ambas profesiones se llevan muy bien de la mano.
+                    </p>
+                    <p class="description-about-me">
+                        A día de hoy sigo descubriendo nuevos lenguajes de programación como JavaScript, HTML, CSS y React. La idea es continuar con esa misma línea de aprendizaje, ya que todo lo que sé hasta ahora se complementa como en un engranaje.
+                    </p>
+                    <p class="description-about-me">
+                        Cuando eres desarrollador web las posibilidades son infinitas, por eso amo este mundo
+                        y lo mejor de todo es ¡El trabajo en equipo! =)
+                    </p>
+                </div>
+            </div>
 
-</header>
+        </section>
+        <section id="portafolio" class="portafolio">
+            <h2 class="title-section title-portafolio">Portafolio</h2>
+            <div class="project-container">
+                <article class="project">
+                    <a href="https://quotespurple.netlify.app/" target="_blank">
+                        <img class="project-img" src="./assets/project-1.jpg" alt="imagen primer proyecto">
+                        <div class="project-description-container">
+                            <h2 class="project-title">Generador de frases</h2>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem explicabo recusandae, odit vitae aspernatur amet.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href=" https://lucid-clarke-4e0a70.netlify.app/" target="_blank">
+                        <img class="project-img" src="./assets/project-2.jpg" alt="imagen segundo proyecto">
+                        <div class="project-description-container">
+                            <h2 class="project-title">Aplicación clima</h2>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem explicabo recusandae, odit vitae aspernatur amet.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
 
-<div class="banner">
-<main class="contenido-banner">
-        <h1>Diseño Web y Copywriting<span>.</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident id, pariatur, debitis ratione iure cupiditate possimus facere quasi quae dolorum voluptate esse ullam error inventore. Reprehenderit cumque saepe at placeat! <br></p>
-    
-    
-        <div class="botones">
-        <a href="" class="boton-empezar">Portfolio</a>
-        <a href="" class="boton-cv">Descargar CV</a>
+        <footer>
+            <div class="footer-icons-container">
 
-</div>
-</main>
-<aside class="foto">
-</aside>
-</div>
+                <a href="https://www.linkedin.com/in/alexandra-garc%C3%ADa-33662018a/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                        width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </a>
 
-<section id="persona">
-    <div class="about">
-        <h4 class="text">Sobre mí</h4>
-        <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aut ipsam magnam doloribus repellat suscipit facilis fuga quisquam. Ea, at.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, saepe?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi inventore placeat beatae ea reprehenderit eaque incidunt modi et totam harum, quam dolorum molestiae corrupti nam eos? Soluta, ex esse Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio deleniti unde consequuntur animi inventore necessitatibus. Iusto dicta consectetur nam.</p>
-       
-        <div class="boton"><a href="#" class="boton-saber-mas">Saber más</a>
-    </div>
-</div>
-</section>
+                <a href="https://twitter.com/arigrafik" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                        width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
 
-
-<footer>
-    <div class="footer-icons">
-    
-        <a href="https://www.linkedin.com/in/alexandra-garc%C3%ADa-33662018a/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="4" y="4" width="16" height="16" rx="2" />
-                <line x1="8" y1="11" x2="8" y2="16" />
-                <line x1="8" y1="8" x2="8" y2="8.01" />
-                <line x1="12" y1="16" x2="12" y2="11" />
-                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-            </svg>
-        </a>
-        
-        <a href="https://twitter.com/arigrafik" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-            </svg>
-        </a>
-        
-        <a href="https://github.com/AlexandraC0DE" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-            </svg>
-        </a>
-    </div>
-    <p class="text-copyright">Hecho con <span class="cora">♥</span> por Alexandra García © 2021</p>
-</footer>
-
+                <a href="https://github.com/AlexandraC0DE" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                        width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>
+            </div>
+            <p class="text-copyright">Hecho con <span class="cora">&hearts;</span> por Alexandra García <br>© 2022</p>
+    </main>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
