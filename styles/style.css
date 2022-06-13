@@ -157,8 +157,6 @@ p{font-size: 1.25em;}
     text-align: initial;
     padding: 30px;
     flex-direction: row;
-    margin-bottom: 30px;
-    margin-top: -50px;
   }
   .about-me{
     font-family: 'Helvetica';
@@ -172,6 +170,7 @@ p{font-size: 1.25em;}
   }
   .paragraph-about{
     display: flex;
+    margin-top: 20px;
   }
   .paragraph{
     line-height: 1.4;
@@ -214,6 +213,7 @@ p{font-size: 1.25em;}
     align-items: center;
     justify-content: center;
     padding-top: 5px;
+    margin-top: 30px;
 }
 .button-about{
     border: 2px solid var(--tertiary-color);
@@ -233,11 +233,45 @@ p{font-size: 1.25em;}
         color:var(--white-color) ;
         background-color: var(--tertiary-color) ;
     }
+/* --------------TITLE PROJECTS   -------------- */
+.wrapper-typing {
+  /*This part is important for centering*/
+  place-items: center;
+  margin: auto;
+	display: table;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 /* --------------PROJECTS CARDS  -------------- */
 .wrapper {
   display: flex;
   flex-wrap: wrap; /* Make it Responsive */
   justify-content: center;
+  margin-bottom: 60px;
+  
 }
 .card {
   overflow: hidden; /* to make the border-radius visible */ 
@@ -283,8 +317,8 @@ p{font-size: 1.25em;}
 }
 .blog-hashtag {
   color: var(--clr-link);
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
 }
 .blog-title {
   line-height: 1.5rem;
@@ -324,6 +358,71 @@ p{font-size: 1.25em;}
   transition: 250ms all ease-in-out;
   cursor: pointer;
 }
+/* -------------- SKILLS -------------- */
+.skills{
+  height: 100%;
+  background-color: white;
+  margin-top: 60px;
+  margin-bottom: 4px;
+}
+.container {
+  overflow: hidden;
+}
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+  }
+    .logos {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0;
+      color: var(--clr-gray-dark);
+    }
+      .fab {
+        width: calc(100% / 5);
+        animation: fade-in 0.5s 
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* -------------- FOOTER -------------- */
+
+footer {
+  background-color: var(--background-header);
+  padding: 2.5rem 0 3.5rem;
+}
+
+.footer-icons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+.icon {
+  width: 3rem;
+  padding: 0.5rem;
+}
+.text-copyright {
+  font-family: 'Nunito', sans-serif;
+  color: #7e7e7e;
+  font-weight: 300;
+  text-align: center;
+}
 /* --------------RESPONSIVE Para 1024px   -------------- */
 @media only screen and (max-width: 1440px) and 
 (min-width: 1024px){
@@ -340,7 +439,7 @@ p{font-size: 1.25em;}
         margin-top: 50px;
       }
       .container-photo{
-        padding-top: 60px;
+        padding-top: 150px;
       }
       .img-circle{
         height: 500px;
@@ -448,6 +547,7 @@ p{font-size: 1.25em;}
     .container-photo{
         flex-direction: column;
         align-items: center;
+        margin-top: -150px;
     }
     .section-about{
         flex-direction: column;
@@ -482,5 +582,21 @@ p{font-size: 1.25em;}
       .paragraph{
         text-align: initial;
       }
+      .typing-demo{
+        text-overflow: "";
+        overflow-wrap: break-word;
+        font-size: 22px;
+        }
+        .logos {
+          width: 90%;
+          display: inline-block;
+          margin: 0px 0;
+          color: var(--clr-gray-dark);
+        }
+        .fab {
+          width: calc(100% / 3);
+          animation: fade-in 0.5s 
+            cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+        }
     }
 
