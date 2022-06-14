@@ -544,7 +544,7 @@ footer {
 {
        .nav{
         z-index: 999;
-        display: flex;
+        position: relative;
   }
 .nav-logo .logo-link .logo{
         width: 220px;
